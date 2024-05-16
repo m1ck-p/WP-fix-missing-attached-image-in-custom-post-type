@@ -10,9 +10,9 @@
 register_activation_hook(__FILE__, 'fix_broken_attached_image_links_activation');
 
 function fix_broken_attached_image_links_activation() {
-    // get all existing posts of the type 'lesson'
+    // get all existing posts of the type 'your-custom-post-type'
     $posts = get_posts(array(
-        'post_type' => 'lesson',
+        'post_type' => 'your-custom-post-type',
         'posts_per_page' => -1, // get all posts
     ));
 
@@ -23,8 +23,8 @@ function fix_broken_attached_image_links_activation() {
 }
 
 function fix_broken_attached_image_links($post_id) {
-    // check if the post type is of the type 'lesson'
-    if (get_post_type($post_id) === 'lesson') {
+    // check if the post type is of the type 'your-custom-post-type'
+    if (get_post_type($post_id) === 'your-custom-post-type') {
         // get attached images for the post
         $attached_images = get_attached_media('image', $post_id);
 
