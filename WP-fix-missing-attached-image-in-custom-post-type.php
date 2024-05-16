@@ -1,7 +1,7 @@
 <?php
 /*
-    Plugin Name: fix-missing-attached-image-in-custom-post-type
-    Description: This plugin fixes broken attached image links in custom post types.
+    Plugin Name: WP-fix-missing-attached-image-in-custom-post-type
+    Description: This WordPress plugin fixes the errors resulting from broken attached image links in custom post types.
     Version: 1.0
     Author: Mick
 */
